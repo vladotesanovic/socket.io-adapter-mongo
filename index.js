@@ -66,6 +66,7 @@ function adapter(uri, opts) {
 	var uri = 'mongodb://' + creds + host + ':' + port + '/' + db;
 	delete opts.host;
     	delete opts.port;
+	delete opts.db;
 	if (!client) client = socket ? mubsub(socket) : mubsub(uri, opts);
 
 	// this server's key
