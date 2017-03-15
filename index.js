@@ -3,7 +3,7 @@
  */
 
 var uid2 = require('uid2')
-		, mubsub = require('mubsub')
+		, mubsub = require('mongopubsub')
 		, msgpack = require('msgpack-js')
 		, Adapter = require('socket.io-adapter')
 		, debug = require('debug')('socket.io-mongo')
