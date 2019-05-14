@@ -33,6 +33,9 @@ function adapter(uri, opts) {
 		return;
 	}
 
+    // opts
+    var key = opts.key || 'socket.io';
+
 	// init clients if needed
     var client = mubsub(uri, opts);
 
